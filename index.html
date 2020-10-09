@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>FMEA.lite</h2>
+				<!-- <p>&lt;pitch&gt;</p> -->
+				<video muted height="400" data-autoplay loop>
+					<source type="video/mp4" src="video/Risk_Matrix.mp4">
+				</video>
+			</section>
+			<section>
+				<section>
+					<p>It's Monday morning...</p>
+					<p class="fragment" style="justify-content: right;">...Gina gets a mail.</p>
+					<img class="fragment" style="width:20%;" src="images/email.svg" alt="">
+				</section>
+				<section>
+					<a href="https://fmealite.herokuapp.com/">
+						<img style="height: 400px" src="images/email_msg.png" alt="">
+					</a>
+				</section>
+			</section>
+			<section>
+				<section data-transition="none">
+					<img class="fragment" style="height: 400px" src="images/email_msg_reply.png" alt="">
+				</section>
+				<section data-transition="none">
+					<img style="height: 400px" src="images/email_msg_reply_full.png" alt="">
+				</section>
+			</section>
+
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
