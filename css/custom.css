@@ -1,0 +1,12 @@
+.fmea-dflex{
+  display:flex;
+}
+
+.fmea-image-left {
+  width: 400px;
+  height: 400px;
+}
+
+.left {
+  text-align: left;
+}
