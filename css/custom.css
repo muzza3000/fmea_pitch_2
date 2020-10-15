@@ -1,13 +1,50 @@
-.fmea-dflex{
+.dflex {
   display:flex;
   align-items: center;
   justify-content: center;
+}
+.dflex-top {
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+.space-between {
+  justify-content: space-between;
+}
+.p-60 {
+  padding: 60px;
+}
+.w100 {
+  width: 100%;
+}
+.w80 {
+  width: 80%;
+  min-height: 95%;
+}
+.w50 {
+  width: 50%;
+  min-height: 95%;
+}
+.w40 {
+  width: 40%;
+  min-height: 95%;
+}
+.w20 {
+  width: 20%;
+  min-height: 95%;
+}
+.w30 {
+  width: 30%;
+  min-height: 95%;
 }
 
 .fmea-image-left {
   width: 400px;
   height: 400px;
-  padding: 30px;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -26,4 +63,9 @@
 
 .small{
   font-size: 24px;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  width: 200px;
 }

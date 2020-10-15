@@ -15,6 +15,8 @@
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
 </head>
@@ -25,7 +27,7 @@
 
 			<!-- Title Slide -->
 			<section>
-				<h2>FMEA.lite</h2>
+				<h3>FMEA.<span style="font-weight: 300;">Lite</span></h3>
 				<!-- <p>&lt;pitch&gt;</p> -->
 				<video muted height="400" data-autoplay loop>
 					<source type="video/mp4" src="video/Risk_Matrix.mp4">
@@ -33,64 +35,104 @@
 			</section>
 
 			<!-- Introduction -->
-			<section>
-				<div class="fmea-dflex">
-					<div class="fmea-image-left">
-						<img class="fragment" src="images/designer.png" alt="">
-					</div>
-					<div>
-						<p class="fragment left">Mechanical engineer</p>
-						<p class="fragment left">Product design</p>
-						<p class="fragment left small">💭 Every design can be improved</p>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="fmea-dflex">
-					<div class="fmea-image-left">
-						<img class="fragment" src="images/bike.png" alt="">
-					</div>
-					<div>
-						<p class="left fragment">Let's say, I'm designing a bike</p>
-					</div>
-				</div>
-			</section>
 			<section data-transition="none">
-					<div class="fmea-dflex">
-						<div class="fmea-image-left">
-							<img class="" src="images/bike.png" alt="">
-						</div>
-						<div>
-							<div class="fmea-image-left">
-								<img class="" src="images/bike_functions.png" alt="">
-							</div>
-						</div>
-					</div>
-			</section>
-			<section>
-				<div class="fmea-dflex">
-					<div class="fmea-image-left">
-						<img class="" src="images/bike_functions_highlight.png" alt="">
+				<div class="dflex ">
+					<div class="w50 dflex p-60">
+						<img class="" src="images/designer.png" alt="">
 					</div>
 					<div>
-						<div class="fmea-image-left">
-							<img class="fragment" src="images/bike_failure_modes.png" alt="">
-						</div>
+						<img class="fragment w80 p-60"  src="images/bike.png" alt="">
 					</div>
 				</div>
+				<aside class="notes">
+					Hi my name is thomas murray and for the last 10 years or so I have been working as a mechanical engineer in product design.
+					(------)
+					When you start to design something, the first thing you need to know is what is it meant to do, i.e. what "functions" is it meant to perform.
+					(------)
+					Then, in order to ensure you create a robust and successful design, you need to try and think of every possible way the design may fail, or fail to perform it's intended functions. We call these "failure modes"
+					(------)
+					Let's say for example that I am design a mountain bike. The first thing I would want to do, is define the functions it must perform.
+				</aside>
+			</section>
+			<section>
+				<div class="dflex">
+					<img class="w50 p-60"  src="images/bike.png" alt="">
+					<div class="w40">
+						<img class="fragment"  src="images/functions_1.png" alt="">
+						<img class="fragment"  src="images/functions_2.png" alt="">
+						<img class="fragment"  src="images/functions_3.png" alt="">
+						<img class="fragment"  src="images/functions_4.png" alt="">
+						<img class="fragment"  src="images/functions_5.png" alt="">
+					</div>
+				</div>
+				<aside class="notes">
+					So for example, the bike must be able to...
+					(....)
+					and so on...
+				</aside>
+			</section>
+			<section>
+				<div class="dflex-top">
+					<div class="w40">
+						<img class=""  src="images/functions_1.png" alt="">
+						<img class=""  src="images/functions_4.png" alt="">
+					</div>
+					<div class="w40">
+						<img class="fragment"  src="images/fm_1.png" alt="">
+						<img class="fragment"  src="images/fm_2.png" alt="">
+						<img class="fragment"  src="images/fm_3.png" alt="">
+						<img class="fragment"  src="images/fm_4.png" alt="">
+					</div>
+					</div>
+				<aside class="notes">
+					Then we want go through the functions one by one and list all the potential failure modes...
+					(....)
+					and so on...
+				</aside>
 			</section>
 			<section>
 				<div class="">
-					<div class="fmea-image-100w">
-						<img class="" src="images/cause_and_effect.png" alt="">
+					<div class="d-flex">
+						<img class="" data-fragment-index="1" src="images/ce_1.png" alt="">
 					</div>
-					<div class="fmea-image-100w">
-						<img class="fragment" src="images/cause_and_effect1.png" alt="">
+					<div class="dflex">
+						<div>
+							<img class="fragment" data-fragment-index="3" src="images/ce_3.png" alt="">
+						</div>
+						<div>
+							<img class="fragment" data-fragment-index="2" src="images/ce_2.png" alt="">
+						</div>
+						<div>
+							<img class="fragment" data-fragment-index="4" src="images/ce_4.png" alt="">
+						</div>
 					</div>
+					</div>
+				<aside class="notes">
+					We then dive a level deeper where we want to define all the potential causes for this failure mode, and the effect that would have on the overall success of the product...
+					(....)
+					We always do this as a team, to leverage the collective experience of product experts, so that we capture as many of the causes and corresponding effects as possible
+					(....)
+					So for example in this case, one potential cause may be that the current brake discs only provide a moderate amount of braking force, and the effect of this would be that the the customer is mildly dissatisfied, we receive some bad reviews and loss in sales.
+					Then we want go through the functions one by one and list all the potential failure modes...
+					(....)
+					Finally we go on to assess the likelihood that this cause may occur, and the severity of the outcome. We
+					and so on...
+					and so on...
+				</aside>
+			</section>
+			<section>
+				<p>Prioritize</p>
+				<div class="fmea-image-100w">
+					<img class="" src="images/priotize_risk_matrix.png" alt="">
 				</div>
 			</section>
 			<section>
-				<p>This process is called Failure Mode Effect Analysis</p>
+				<h3>
+					<span style="display: inline-block;" class="fragment fade-right"><b>F</b><span style="font-weight: 100;">ailure</span></span>
+					<span style="display: inline-block;" class="fragment fade-right"><b>M</b><span style="font-weight: 100;">ode</span></span>
+					<span style="display: inline-block;" class="fragment fade-right"><b>E</b><span style="font-weight: 100;">ffect</span></span>
+					<span style="display: inline-block;" class="fragment fade-right"><b>A</b><span style="font-weight: 100;">nalysis</span></span>
+				</h3>
 				<p class="fragment small">or FMEA for short</p>
 			</section>
 			<section>
@@ -98,6 +140,9 @@
 				<div class="fmea-image-100w">
 					<img class="" src="images/old_fmea.jpg" alt="">
 				</div>
+				<aside class="notes">
+					And while the structure is very good, the mechanics of the process is very painful, involving lots of spreadsheets, and dated software.
+				</aside>
 			</section>
 			<section>
 				<p>... and goes a bit like this</p>
@@ -106,11 +151,32 @@
 				</div>
 			</section>
 			<section>
-				<p>So we have tried to change that</p>
-				<div class="fmea-image-100w">
-					<a class="fmea-image-100w" href="https://www.fmealite.xyz/" target="_blank">
-					<img class="fmea-image-100w" src="images/FMEAlite_logo_with_text.svg" alt=""></a>
+				<p>So we setout to change that</p>
+				<div class="d-flex space-between">
+					<a class="" href="https://www.fmealite.xyz/" target="_blank">
+					<img class="" src="images/collaboration_fmealite.png" alt=""></a>
 				</div>
+			</section>
+
+			<section>
+				<!-- Blank slide -->
+			</section>
+			<section>
+				<p>Thank you!</p>
+				<div class="dflex">
+					<div>
+						<img class="profile_pic" src="images/ben_profile.png" alt="">
+						<p>Ben</p>
+					</div>
+					<div class="">
+						<img class="profile_pic" src="images/tom_profile.png" alt="">
+						<p>Tom</p>
+					</div>
+				</div>
+				<p class="fragment">Questions?</p>
+			</section>
+			<section>
+				<p class="">&lt;/bootcamp&gt;</p>
 			</section>
 		</div>
 	</div>
@@ -135,6 +201,11 @@
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
