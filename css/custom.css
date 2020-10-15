@@ -1,12 +1,29 @@
 .fmea-dflex{
   display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fmea-image-left {
   width: 400px;
   height: 400px;
+  padding: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.fmea-image-100w {
+  width: 100%;
+  padding: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left {
   text-align: left;
+}
+
+.small{
+  font-size: 24px;
 }
