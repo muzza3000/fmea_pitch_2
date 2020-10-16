@@ -66,6 +66,15 @@
 }
 
 .profile_pic {
-  border-radius: 50%;
-  width: 200px;
+  border-radius: 15px;
+  height: 300px;
+
+}
+
+.profile_name {
+  font-size: 24px;;
+}
+
+.px50 {
+  padding: 0 50px;
 }
